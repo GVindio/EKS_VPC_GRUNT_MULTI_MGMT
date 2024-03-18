@@ -22,12 +22,6 @@ inputs = {
   cluster_role      = "AWSEKSClusterRole-stage"
   region_name       = local.region
   vpc_cidr_block    = "10.20.0.0/16"
-  public_subnets = {
-    "${local.region}a" = "10.20.0.0/24"
-    "${local.region}b" = "10.20.2.0/24"
-  }
-  private_subnets = {
-    "${local.region}a" = "10.20.1.0/24"
-    "${local.region}b" = "10.20.3.0/24"
-  }
+  public_subnets = ["10.20.0.0/24", "10.20.2.0/24"]
+  private_subnets = ["10.20.1.0/24", "10.20.3.0/24"]
 }
