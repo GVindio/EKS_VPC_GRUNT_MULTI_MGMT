@@ -1,2 +1,12 @@
-.terragrunt-cache*
-.terraform*
+# Ignore Terraform .terraform directory
+**/.terraform/*
+
+# Ignore Terraform .tfstate files
+*.tfstate
+*.tfstate.*
+
+# Ignore Terragrunt cache directory
+.terragrunt-cache/
+
+# Ignore Terragrunt .terraform directory
+**/.terraform/*
