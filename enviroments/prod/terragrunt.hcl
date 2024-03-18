@@ -1,5 +1,5 @@
 terraform {
-  source = "git::git@github.com:GVindio/EKS-GRUNT.git//modules/eks_vpc"
+  source = "git::git@github.com:GVindio/EKS-GRUNT.git//modules"
 
 }
 
